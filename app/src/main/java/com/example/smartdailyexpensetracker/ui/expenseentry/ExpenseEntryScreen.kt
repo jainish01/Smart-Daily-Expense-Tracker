@@ -32,6 +32,7 @@ import androidx.core.content.ContextCompat
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil.compose.AsyncImage
+import com.example.smartdailyexpensetracker.utils.saveImageToInternalStorage
 
 /**
  * Screen for user to input details of a new expense.
@@ -68,8 +69,14 @@ fun ExpenseEntryScreen(
     val imagePickerLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.GetContent()
     ) { uri ->
-        uri?.let { viewModel.onReceiptImageUriChange(it.toString()) }
+        uri?.let {
+            val localPath = saveImageToInternalStorage(context, it)
+            if (localPath != null) {
+                viewModel.onReceiptImageUriChange(localPath)
+            }
+        }
     }
+
 
     val permissionLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.RequestPermission()
@@ -241,7 +248,7 @@ fun ExpenseEntryScreen(
                 if (receiptImageUri != null) {
                     // Show the selected image
                     AsyncImage(
-                        model = receiptImageUri,
+                        model = "file://$receiptImageUri",
                         contentDescription = "Receipt",
                         modifier = Modifier.size(60.dp)
                     )
