@@ -4,9 +4,11 @@
 package com.example.smartdailyexpensetracker.ui.expenselist
 
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.Note
 import androidx.compose.material.icons.filled.Image
@@ -173,15 +175,17 @@ fun ExpenseListHeader(
             .padding(horizontal = 16.dp, vertical = 12.dp)
     ) {
         Row(
-            modifier = Modifier.fillMaxWidth(),
+            modifier = Modifier
+                .fillMaxWidth()
+                .wrapContentHeight()
+                .horizontalScroll(rememberScrollState()),
             verticalAlignment = Alignment.CenterVertically
         ) {
             Button(onClick = onDateChange) {
-                Text(dateFormat.format(selectedDate)) // Pops open date picker
+                Text(dateFormat.format(selectedDate))
             }
             Spacer(Modifier.width(16.dp))
-            SegmentedButton(groupingMode, onGroupingChange) // Shows toggle for grouping mode
-            Spacer(Modifier.weight(1f))
+            SegmentedButton(groupingMode, onGroupingChange)
         }
         Spacer(Modifier.height(8.dp))
         Text(
