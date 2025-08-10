@@ -24,7 +24,7 @@ Smart Daily Expense Tracker is a user-friendly mobile application designed to he
 
 
 ## Download
-https://drive.google.com/file/d/15QyHo9NkuflprYkPRIaGLGvyXjiIZm-E/view?usp=sharing
+[https://drive.google.com/file/d/15QyHo9NkuflprYkPRIaGLGvyXjiIZm-E/view?usp=sharing](https://drive.google.com/file/d/1ZMRAtdfTmIZiPEmBIvy-ly6Y-0CPY6Im/view?usp=drive_link)
 
 ## Features
 
