@@ -6,6 +6,26 @@ A modern Android application built with Kotlin for tracking daily expenses effic
 
 Smart Daily Expense Tracker is a user-friendly mobile application designed to help users monitor their daily spending habits, categorize expenses, and gain insights into their financial patterns. The app provides an intuitive interface for quick expense entry and comprehensive expense management.
 
+## Screenshots
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/523bbc8a-d7d9-43ff-b981-a9bffa0384fd" alt="Add Expense" width="300"/>
+  <img src="https://github.com/user-attachments/assets/f1d6380f-8fbd-476c-a427-233755c58d90" alt="Expense List" width="300"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7d0af91d-2be5-49e8-9c1e-b89c00741aa4" alt="Expense Details" width="300"/>
+  <img src="https://github.com/user-attachments/assets/e4e173ae-b328-4040-b6e0-b2f744142030" alt="Expense Report" width="300"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/fd5ecfc9-25d4-4e48-88ef-237f6a5a0818" alt="App Settings" width="300"/>
+</p>
+
+
+## Download
+https://drive.google.com/file/d/15QyHo9NkuflprYkPRIaGLGvyXjiIZm-E/view?usp=sharing
+
 ## Features
 
 - **Quick Expense Entry**: Add expenses with just a few taps
