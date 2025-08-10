@@ -37,7 +37,7 @@ Smart Daily Expense Tracker is a user-friendly mobile application designed to he
 - AndroidX components
 - Material Design Components
 - Room Database
-- Flow(coroutines) & ViewModel for reactive UI
+- Flow(Coroutines) & ViewModel for reactive UI
 
 ## Installation
 
