@@ -30,7 +30,7 @@ Smart Daily Expense Tracker is a user-friendly mobile application designed to he
 
 - **Quick Expense Entry**: Add expenses with just a few taps
 - **Category Management**: Organize expenses into customizable categories
-- **Daily/Weekly/Monthly Views**: Track spending across different time periods
+- **Daily/Weekly Views**: Track spending across different time periods
 - **Smart Insights**: Get intelligent analysis of spending patterns
 - **Expense History**: View and manage past transactions
 - **Budget Tracking**: Set and monitor budget limits
